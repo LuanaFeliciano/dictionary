@@ -1,13 +1,9 @@
-const btn = document.querySelector("#button-addon2");
+const wrapper = document.querySelector(".wrapper");
 const input = document.querySelector("#input_txt");
-const word_name = document.querySelector("#word");
-const meanings = document.querySelector(".meanings");
-const definition = document.querySelector("#definition-word");
-const error = document.querySelector("#error");
-const example = document.querySelector("#example-1");
-const audio = document.querySelector("#audio");
+const btn = document.querySelector("#button-addon2");
+const info = wrapper.querySelector(".info");
+const synonyms = wrapper.querySelector(".synonyms .list")
 
-let palavra = 'hello'
 const fetchWord = async (word) => {
     const APIResponse = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
     
@@ -20,28 +16,34 @@ const fetchWord = async (word) => {
 }
 
 
-const renderWord = async (word) => {
 
-    error.innerHTML = '';
+const renderWord = async (word) => {
 
     const data = await fetchWord(word);
 
     if (data){
-        audio.src = ''
-        document.querySelector()
-        word_name.innerHTML = data[0].word;
-        definition.innerHTML = data[0].meanings[0].definitions[0].definition;
-        audio.src = data[0].phonetics[1].audio;
+        wrapper.classList.add("active")
+        let definition = data[0].meanings[0].definitions[0],
+        phonetics =  `${data[0].meanings[0].partOfSpeach} / ${data[0].phonetics[0].text}/`;
 
-        if(data[0].meanings[0].definitions[0].example === undefined){
-            example.innerHTML = 'No examples of this word were found';
-        }else{
-            example.innerHTML = data[0].meanings[0].definitions[0].example
+
+
+        document.querySelector(".word p").innerHTML = data[0].word;
+        document.querySelector(".word span").innerHTML = phonetics;
+        document.querySelector(".meaning span").innerHTML = definition.definition;
+        document.querySelector(".example span").innerHTML = definition.example;
+
+        for(let i = 0; i<5; i++){
+            let tag = `<span>${definition.synonyms[i]}</span>/ `
+            synonyms.insertAdjacentHTML("beforeend", tag);
         }
+
+        
+
               
     }else {
-        error.innerHTML = 'not found ☹️'
         
+        info.innerHTML = 'not found ☹️'
     }
     
 }
@@ -49,9 +51,3 @@ const renderWord = async (word) => {
 btn.addEventListener('click', () => {
     renderWord(input.value);
 } )
-
-function play(){
-    audio.play();
-}
-
-renderWord(palavra)
