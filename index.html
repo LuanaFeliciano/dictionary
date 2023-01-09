@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-2">
+        <h1 class="title text-center">Dictionary 📖</h1>
+
+        <div class="input-group mt-5 container">
+            <input type="search" class="form-control" id="input_txt" placeholder="Enter here a word..." required >
+            <button class="btn btn-outline-success" type="button" id="button-addon2">Search</button>
+            
+        </div>
+            <p class="container" id="error"></p>
+    </div>
+
+    <div class="container mt-5" id="result">
+        <div class="introducao">
+            <h4 id="word" class="text-center word"> </h4>
+            <button class="btn" onclick="play()">▶️ Click and listen to the pronunciation</button>
+        </div>
+        
+        
+        <div class="audio1" >
+                <audio id="audio" src="">
+                    
+                </audio>
+        </div>
+        
+        <div class="meanings">
+                <h5 class="mb-3" id="definition-word"></h5>
+                <p id="example-1"></p>
+        </div>
+        
+    </div>
+</body>
+
+</html>

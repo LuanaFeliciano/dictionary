@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+
+.wrapper header {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.search input {
+    height: 53px;
+    border: 2px solid rgb(12, 167, 105);
+}
+
+.wrapper ul li {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 14px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+ul .word p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+ul .word p::first-letter {
+    text-transform: capitalize;
+}
+
+ul .word span {
+    font-size: 14px;
+    color: grey;
+}
+
+ul .word i {
+   cursor: pointer;
+   color: #4e4d4e;
+}
+
+.content li .details {
+    border-left: 2px solid ;
+    border-radius: 2px;
+    padding-left: 6px;
+}
+
+.content li p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content li span {
+    color: rgb(109, 108, 108);
+}
+
+.info {
+    color: grey;
+    font-size: 14px;
+}
+
+.wrapper ul {
+    display: none;
+}
+
+.wrapper.active ul {
+    display: block;
+}
