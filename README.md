@@ -1,6 +1,6 @@
 <img width="100px" height="100px" align="right" src="https://user-images.githubusercontent.com/98564118/156263065-ef953413-4cdd-4894-93ec-6459cb7715c2.png">  <h1 align="center"> Dictionary - Projeto Pessoal </h1>
 ## Introdução
-Dicionário feito nos estudos de Javascript, CSS, GIT e APIs.
+Dicionário feito nos estudos de Javascript, CSS, Bootstrap, Git e APIs.
 * O Site foi feito utilizando a API Dictionary API (https://dictionaryapi.dev/) para usar em minhas tarefas de inglês.
 * Ainda pode ser melhorado :)
 
