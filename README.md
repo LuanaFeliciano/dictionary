@@ -1,15 +1,10 @@
-<img width="100px" height="100px" align="right" src="https://user-images.githubusercontent.com/98564118/156263065-ef953413-4cdd-4894-93ec-6459cb7715c2.png">  <h1 align="center"> Dictionary - Projeto Pessoal </h1>
+<img width="100px" height="100px" align="right" src="https://user-images.githubusercontent.com/98564118/225470913-893c7bfe-051f-4b5d-a8e8-bdea11dd8669.png">  <h1 align="center"> Jogo Dados - Usuário VS Máquina </h1>
 ## Introdução
-Dicionário feito nos estudos de Javascript, CSS, Bootstrap, Git e APIs.
-* O Site foi feito utilizando a API Dictionary API (https://dictionaryapi.dev/) para usar em minhas tarefas de inglês.
-* Ainda pode ser melhorado :)
+O Jogo foi feito nos estudos da matéria de linguagem de programação na UNIMAR utilizando dotnet
+* É um form na linguagem C# 
+* Primeiramente eu havia utilizado o while mas optei por fazer somente com condicionais para que a cada vez que o usuário apertasse o botão 1 partida iria acontecer
 
 
 
 ## Techs
-* [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/): Linguagem de programação interpretada estruturada, de script. Com o JS, você pode mostrar mensagens e outras informações interessantes, fazer verificações ou mudar dinamicamente a apresentação visual das páginas.
-* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/): Código usado para dar estilo à página Web.
-* [GIT](https://git-scm.com/doc): Sistema de controle de versão distribuído
-
-## Link do Site
-https://dictionaryenglish.vercel.app/
+* [C#](https://learn.microsoft.com/en-us/dotnet/csharp/): linguagem de programação orientada a objetos desenvolvida pela Microsoft
